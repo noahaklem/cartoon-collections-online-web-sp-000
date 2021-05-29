@@ -20,6 +20,7 @@ def find_the_cheese(array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   array.find do |index|
-    cheese_types.each {|cheese| cheese == index}
+    cheese_types.map {|cheese| cheese == index}
+    cheese_type.first
   end
 end
